@@ -2,14 +2,14 @@
 
 
 /** 
- * main prints "Programming is like building a multilingual puzzle, followed by a new line.
+ * main prints "Programming is like building a multilingual puzzle,
  *Return: Always 0.
  */
 
 int main (void)
 
 {
-	puts("\"Programming is like buildng a multilingual puzzle, followed by a new line.");
+	puts("\"Programming is like buildng a multilingual puzzle,");
 
 	return (0);
 }
