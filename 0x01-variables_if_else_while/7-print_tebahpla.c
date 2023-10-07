@@ -1,17 +1,17 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * DEscription: 'Alphabet outbut in lower case using putchar funtion'
+ * Description: 'using putchar to print small alphabet in reverse'
  * Return: Always 0
  */
 int main(void)
 {
-	int n = 97;
+	int n = 122;
 
-	while (n <= 122)
+	while (n >= 97)
 	{
 		putchar(n);
-		n++;
+		n--;
 	}
 	putchar('\n');
 	return (0);
