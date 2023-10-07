@@ -2,7 +2,7 @@
 /**
  * main - Entry
  * Description putchar for lower and upper case
- * Return; always 0
+ * Return: always 0
  */
 int main(void)
 {
