@@ -1,30 +1,31 @@
 #include <stdio.h>
 /**
  * main - entry point
- * Description : prints possible combination of single digits
- * Return: 0
+ * Description : 'output of possible singke digit combinations'
+ * Return: Always 0
  */
+
 int main(void)
 {
-	int x = '0';
-	int w;
 
-	while (x <= '9')
+	int t;
+	int x;
+
+	for (t = '0'; t < 9; t++)
 	{
-		w = '0';
-			while  (w <= '9')
+		for (x = t + 1; x <= '9'; t++)
+		{
+			if (x != t)
 			{
-				if (x < w)
 				putchar(x);
-				putchar(w);
-				if (x != '8' || (x == '8' && w != '9')
-						}
-						putchar(',');
-						putchar(' ');
-						}
-						w++;
-						}
-						x++;
-						putchar('\n');
-						return (0);
+				putchar(t);
+				if  (x == '8' && t == '9')
+				continue;
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
+	putchar('\n');
+		return (0);
 }
