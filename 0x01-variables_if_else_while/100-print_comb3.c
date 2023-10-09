@@ -11,18 +11,19 @@ int main(void)
 	int t;
 	int x;
 
-	for (t = '0'; t < 9; t++)
+	for (t = '0'; t <=  9; t++)
 	{
-		for (x = t + 1; x <= '10'; x++)
+		for (x = 0; x <= '9'; x++)
 		{
 			if (x != t)
 			{
-				putchar((x % 10) + 10);
-				putchar((t % 10) + 10);
-				if  (x == '8' &&  t == '9')
-				continue;
+				putchar(x);
+				putchar(t);
+				if  (x == '8' ||  t == '9')
+				{
 				putchar(',');
 				putchar(' ');
+				}
 			}
 		}
 	}
