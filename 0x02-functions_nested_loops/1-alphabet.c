@@ -1,16 +1,16 @@
-#include <main.h>
+#include "main.h"
+
 /**
- * main - check the code
- * Description 'print alphabet in correct sequence'
- * Return: Always 0
+ * print_alphabet - make alphabet
+ *
+ * Return: void
  */
+
 void print_alphabet(void)
 {
-	char f:
-		for (f = 'a'; f <= 'z'; f++)
-		{
-			putchar(f);
-		}
-	putchar ('\n');
-	return (0);
+	char f;
+	for (f = 'a'; f <= 'z'; f++)
+
+		_putchar(f);
+	_putchar('\n');
 }
