@@ -1,19 +1,18 @@
 #include "main.h"
 /**
- * print_numbers - print out numbers
- * @x :Character to be used
+ * print_numbers - print out number
  * Return: Always 0 Successful
  */
 
 void print_numbers(void)
 
 {
-	char x;
+	char t;
 
-	for (x = '0'; x <= '9'; x++)
+	for (t = '0'; t <= '9'; t++)
 
 	{
-		_putchar(x);
+		_putchar(t);
 	}
 	_putchar('\n');
 }
