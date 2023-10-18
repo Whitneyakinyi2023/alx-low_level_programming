@@ -3,7 +3,7 @@
  * _strcmp - Compares two strings
  * @s1: First string pointer
  * @s2: Second string poiner
- * Return: 0 if less than other
+ * Return: compared value
  */
 
 int _strcmp(char *s1, char *s2)
