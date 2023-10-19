@@ -4,7 +4,7 @@
  * reverse_array - Reverses  arrays of integers
  * @a: array of integers
  * @n: elements number to swap
- * Return: void.
+ * Return: 0
  */
 void reverse_array(int *a, int n)
 {
@@ -19,4 +19,5 @@ void reverse_array(int *a, int n)
 		a[q++] = a[n];
 		a[n--] = t;
 	}
+	return (0);
 }
