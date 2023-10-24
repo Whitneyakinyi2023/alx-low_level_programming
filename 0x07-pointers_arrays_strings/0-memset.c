@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio>
+#include <stdio.h>
 /**
  * *_memset - function fills the first n bytes of the memory area
  * @b: constant
@@ -9,11 +9,11 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int n;
+	unsigned int x;
 
-	for (i < n; i = 0; i++)
+	for (x = 0; x < n; x++)
 	{
-		b = s[i];
+		s[x] = b;
 	}
 
 	return (s);
