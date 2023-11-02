@@ -9,19 +9,20 @@
 
 int main(void)
 {
-	int d;
-	for (d = 1; d <= 100; d++)
+	int t;
+	for (t = 1; t <= 100; t++)
 	{
-		if (d % 15 == 0)
+		if (t % 15 == 0)
 			printf("Fizzbuzz");
-		else if (d % 3 == 0)
+		else if (t % 3 == 0)
 			printf("Fizz");
-		else if (d % 5 == 0)
-			printf("Buzz")
+		else if (t % 5 == 0)
+			printf("Buzz");
 		else
-			printf("%d", d );
-		if (i < 100)
+			printf("%t", t);
+		if (t < 100)
+			printf(" ");
 	}
-	print ("\n");
+	printf("\n");
 		return (0);
 }

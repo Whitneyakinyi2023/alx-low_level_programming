@@ -11,15 +11,15 @@ int main(void)
 	int t;
 	int x;
 
-	for (t = '0'; t <=  9; t++)
+	for (t = '0'; t <=  8; t++)
 	{
-		for (x = 0; x <= '9'; x++)
+		for (x = t + 1; x <= '9'; x++)
 		{
-			if (x != t)
+
 			{
 				putchar(x);
 				putchar(t);
-				if  (x == '8' ||  t == '9')
+				if  (x != '8' ||  t != '9')
 				{
 				putchar(',');
 				putchar(' ');
