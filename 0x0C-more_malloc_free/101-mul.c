@@ -3,68 +3,39 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * _print - functionn that pushes sring to left and print
- * @string: String in question
- * @h: string size
- * Rerurn: void
+ * Function to check if a string contains only digits.
+ * isNumeric - Func
+ * multiplyStrings - 
+ * Return: 0
  */
-void _print(char *string, int h)
+int isNumeric(const char *str);
+char *multiplyStrings(const char *num1, const char *num2);
 {
-	int m;
-	int k;
+int main(int argc, char *argv[]) {
+    if (argc != 3) {
+        printf("Error\n");
+        return 98;
+    }
 
-	m = k = 0;
+    // Check if both input strings are composed of digits
+    if (!isNumeric(argv[1]) || !isNumeric(argv[2])) {
+        printf("Error\n");
+        return 98;
+    }
 
-	while (m < h)
-	{
-		if (string[m] != '0')
-			k = h;
-		if (k || m == h - 1)
-			_putchar(string[m]);
-		m++;
-	}
-	_putchar('\n');
-	free(string);
+    const char *num1 = argv[1];
+    const char *num2 = argv[2];
+
+    char *result = multiplyStrings(num1, num2);
+
+    if (result) {
+        printf("%s\n", result);
+        free(result);
+    } else {
+        printf("Error\n");
+        return 98;
+    }
+
+    return (0);
 }
-
-/**
- * mul - multiplies char with string
- * then places anser to dest (destination)
- * @x: char to multiply
- * @number: string to multiply
- * @num_index: final NULL index
- * @dest: Destination
- * @dest_index: greatest to start addition
- * Return: To destination
- */
-char *mul(char x, char *number, int num_index, char *dest, int dest_index)
-{
-	int a;
-	int b;
-	int plus;
-	int multipication;
-	int ar;
-	int mr;
-
-	mr = ar = 0;
-
-	for (a = num_index, b = dest_index; a >= 0; a--, b--)
-{
-	multipication = (x - '0') * (number[a] - '0') + mr;
-	mr = multipication / 10;
-	plus = (dest[b] - '0') + (multipication % 10) + ar;
-	ar = plus / 10;
-	dest[b] = plus % 10 + '0';
-}
-for (ar += mr; b >= 0 && ar; b--)
-{
-	plus = (dest[b] - '0') + ar;
-	ar = plus / 10;
-	dest[b] = plus % 10 + '0';
-}
-if (ar)
-{
-	return (NULL);
-}
-return (dest);
 }
