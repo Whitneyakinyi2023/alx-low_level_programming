@@ -24,7 +24,7 @@ void _print(char *string, int h)
 		m++;
 	}
 	_putchar('\n');
-	free (string);
+	free(string);
 }
 
 /**
@@ -38,10 +38,11 @@ void _print(char *string, int h)
  * Return: To destination
  */
 char *mul(char x, char *number, int num_index, char *dest, int dest_index)
+{
 	int a;
 	int b;
 	int plus;
-	int multipication
+	int multipication;
 	int ar;
 	int mr;
 
@@ -51,7 +52,7 @@ char *mul(char x, char *number, int num_index, char *dest, int dest_index)
 {
 	multipication = (x - '0') * (number[a] - '0') + mr;
 	mr = multipication / 10;
-	plus = (dest[b] - '0') +(multipication % 10) + ar;
+	plus = (dest[b] - '0') + (multipication % 10) + ar;
 	ar = plus / 10;
 	dest[b] = plus % 10 + '0';
 }
