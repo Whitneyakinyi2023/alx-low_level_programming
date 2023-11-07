@@ -4,24 +4,25 @@
 
 /**
  * print_dog - prints a struct dog
- * @d : pointer
+ * @d: pointer
+ * Return: 0
  */
 
 void print_dog(struct dog *d)
 {
 	if (d == NULL)
-		return
-			printf("Name:(nil)\n");
+
+	printf("Name:(nil)\n");
 	else
-		printf("Name%s\n", d -> Name);
+		printf("Name:%s\n", d->name);
 	if (d == NULL)
-		return
-			printf("Age:(nil)\n");
+
+	printf("Age:(nil)\n");
 	else
-		printf("Age%f\n", d -> Age);
+		printf("Age:%f\n", d->age);
 	if (d == NULL)
-		return
-			printf("Owner:(nil)\n");
+
+	printf("Owner:(nil)\n");
 	else
-		printf("Owner%s\n", d -> Owner);
+		printf("Owner:%s\n", d->owner);
 }
