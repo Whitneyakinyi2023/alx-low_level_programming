@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_binary - Prints binary representation of a number
+ * print_bi - Prints binary representation of a number
  * @n:..
  * Return:Num
  */
