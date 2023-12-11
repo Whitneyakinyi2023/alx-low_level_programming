@@ -1,14 +1,14 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * main - runs tge code
- * Return: 0
+ * add - function that adds two integers 
+ * @n1: integer one
+ * @n2: integer two
+ * Return: result.
  */
-int main(void)
+int add(int n1, int n2)
 {
-	int n;
-	n = add (89, 9);
-	printf("%d/n" ,n);
-	return (0);
+	int sum;
+	
+	sum = n1 + n2;
+	return (sum);
 }
