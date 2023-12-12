@@ -36,7 +36,7 @@ int main(int argc, char **argv)
 
 	do
 	{
-		r1 = read(file_from, buffer, argv[1]);
+		r1 = read(file_from, buffer, (size_t)strlen(argv[1]));
 		if  (r1 == 0)
 			break;
 		error_98(r1, buffer, argv[1]);
