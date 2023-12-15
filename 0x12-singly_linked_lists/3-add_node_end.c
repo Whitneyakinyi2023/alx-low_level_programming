@@ -36,3 +36,17 @@ list_t *add_node_end(list_t **head, const char *str)
 	holder->next = new_node;
 	return (new_node);
 }
+
+/**
+* _strlen - finds the length of a string
+* @str: string to find the length of
+*
+* Return: length of string
+*/
+unsigned int _strlen(char *str)
+{
+	unsigned int x;
+
+	for (x = 0; str[x]; x++)
+	return (x);
+}
