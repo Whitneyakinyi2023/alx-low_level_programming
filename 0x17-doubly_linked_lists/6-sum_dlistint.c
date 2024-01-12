@@ -10,8 +10,9 @@
 int sum_dlistint(dlistint_t *head)
 {
 	int tally = 0;
+	dlistint_t *current;
 
-	for (dlistint_t *current = head; current != NULL; current = current->next)
+	for (current = head; current != NULL; current = current->next)
 
 	{
 		tally += current->n;
