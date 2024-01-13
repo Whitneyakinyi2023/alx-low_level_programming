@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * insert_dnodeint_at_index - function that inserts a new node at a given position.
+ * insert_dnodeint_at_index - function.
  * @h: head
  * @n: integer
  * @idx: index
@@ -20,7 +20,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	new = malloc(sizeof(dlistint_t));
 	if (!new)
 		return (NULL);
-	
+
 	new->n = n;
 	new->prev = NULL;
 	new->next = NULL;
@@ -34,7 +34,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		return (new);
 	}
 	current = *h;
-	for (x = 0; x < idx -1 && current; x++)
+	for (x = 0; x < idx - 1 && current; x++)
 		current = current->next;
 	if (!current)
 	{
@@ -46,7 +46,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	if (current->next)
 		current->next->prev = new;
-	
+
 	current->next = new;
 
 	return (new);
